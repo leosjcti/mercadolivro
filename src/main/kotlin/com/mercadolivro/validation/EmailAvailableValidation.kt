@@ -1,8 +1,9 @@
 package com.mercadolivro.validation
 
 import com.mercadolivro.service.CustomerService
-import jakarta.validation.ConstraintValidator
-import jakarta.validation.ConstraintValidatorContext
+import javax.validation.ConstraintValidator
+import javax.validation.ConstraintValidatorContext
+
 
 class EmailAvailableValidation(var customerService: CustomerService): ConstraintValidator<EmailAvailable, String> {
     override fun isValid(value: String?, context: ConstraintValidatorContext?): Boolean {

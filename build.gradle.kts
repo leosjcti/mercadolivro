@@ -2,7 +2,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 import org.jetbrains.kotlin.ir.backend.js.compile
 
 plugins {
-	id("org.springframework.boot") version "3.1.0"
+	id("org.springframework.boot") version "2.7.12"
 	id("io.spring.dependency-management") version "1.1.0"
 	kotlin("jvm") version "1.8.21"
 	kotlin("plugin.spring") version "1.8.21"
@@ -26,6 +26,9 @@ dependencies {
 	implementation("mysql:mysql-connector-java:8.0.27")
 	implementation("org.flywaydb:flyway-core")
 	implementation("org.flywaydb:flyway-mysql")
+	implementation("io.springfox:springfox-swagger2:3.0.0")
+	implementation("io.springfox:springfox-swagger-ui:3.0.0")
+	implementation("io.springfox:springfox-boot-starter:3.0.0")
 	runtimeOnly("mysql:mysql-connector-java")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
