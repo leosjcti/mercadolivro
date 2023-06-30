@@ -1,21 +1,29 @@
 # Mercadolivro!
 Projeto prático para aprendizado de Kotlin com Springboot
 
-Tecnologias
-Java 17
+### Tecnologias
+- Java 17
 
-Kotlin
+- Kotlin
 
-SpringBoot 2.7
+- SpringBoot 2.7
 
-MySQL
+- MySQL
 
-Controller Adivice (Para Exceptions)
+- Controller Adivice (Para Exceptions)
 
-SpringValidator
+- SpringValidator
 
-Swagger
+- Swagger
 
-Eventos
+- Eventos
 
-Spring Security
+- Spring Security
+
+**Observação:**
+- Para conseguir utilizar os endpoints, pegar um token através do http://localhost:8080/login
+passando como parâmetro um usuário válido no banco via json
+{
+"email": "email",
+"password": "password"
+}
