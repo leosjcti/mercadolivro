@@ -16,7 +16,6 @@ class GenerateNfeListener(
     fun listen(purchaseEvent: PurchaseEvent) {
         val nfe = UUID.randomUUID().toString()
         val purchaseModel = purchaseEvent.purchaseModel.copy(nfe = nfe)
-
         purchaseService.update(purchaseModel)
     }
 }
